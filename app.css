@@ -1,0 +1,48 @@
+html, body{
+  height: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: rgba(189, 195, 199,0.5);
+  font: 1.0em/1.6em "Lato", Arial, Sans-serif;
+}
+.container{
+  max-width: 920px;
+  margin: 0 auto;
+  background: #FFF;
+  height: 100%;
+  padding: 0 20px;
+  position: relative;
+}
+.container h1{
+  margin: 0 0 20px 0;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid rgba(127, 140, 141,1.0);
+}
+label{
+  display: block;
+}
+input, button{
+  font: 1.3em "Lato", Arial, Sans-serif;
+}
+input[type=text],input[type=number]{
+  border-radius: 5px;
+  border: 2px solid #bdc3c7;
+  padding: 5px 20px;
+}
+button{
+  height: 38px;
+  border-radius: 5px;
+  border: 2px solid rgba(46, 204, 113,1.0);
+  padding: 0 20px;
+  background: rgba(46, 204, 113,1.0); 
+  color: #FFF;
+  cursor: pointer;
+  display: block;
+  margin: 20px 0;
+}
+button:hover{
+  border: 2px solid rgba(39, 174, 96,1.0);
+  background: rgba(39, 174, 96,1.0); 
+}

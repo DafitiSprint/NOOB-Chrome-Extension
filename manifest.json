@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Dafiti Alert",
+  "description": "This extension recieve notifications from NOOB.",
+  "version": "0.0.1",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "permissions": [
+    "tabs",
+    "notifications"
+  ],
+  "web_accessible_resources": [
+    "noob_dft_icon_red.png"
+  ],
+  "browser_action": {
+    "default_icon": "noob_dft_icon_red_32.png"
+  },
+  "options_page": "config.html",
+  "icons": { "128": "noob_dft_icon_red.png" }
+}

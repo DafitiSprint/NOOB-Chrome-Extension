@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dafiti Alert - Config</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='app.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+  <div class="container">
+    <h1> Dafiti Alert - Config</h1>
+    <div class="fields">
+        <label for="websocket_server">Websocket Server</label>
+        <input type="text" id="websocket_server"/>
+        <label>Interval for check connection in minutes</label>
+        <input type="number" id="interval_connection" min="2" />
+        <br/><button id="save">Save</button>
+    </div>
+  </div>
+    <script src="config.js"></script>
+  </body>
+</html>
