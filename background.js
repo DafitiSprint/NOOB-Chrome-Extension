@@ -67,9 +67,6 @@ var NOOB = {
     NOOB.isConnected = true;
     NOOB.setIcon.apply(NOOB, ['green']);
     NOOB.notification.apply(NOOB, ["Notification server is up","green"]);
-    NOOB.stayAlive = setInterval(function(){
-      NOOB.websocketServer.send('stay alive');
-    }, 25000);
   },
 
   onmessage: function(m) {
@@ -82,7 +79,6 @@ var NOOB = {
     NOOB.notification.apply(NOOB, ['Notification Server is Down\nClick the icon to connect or wait 1 hour', 'yellow']);
     NOOB.isConnected = false;
     NOOB.setIcon.apply(NOOB, ['red']);
-    clearInterval(NOOB.stayAlive);
     NOOB.interval = setInterval(function(){
       NOOB.connect.call(NOOB);
     }, NOOB.getConnInterval());
