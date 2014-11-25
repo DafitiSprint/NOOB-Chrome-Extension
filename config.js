@@ -12,7 +12,7 @@ function restore_options() {
 	var interval_connection = localStorage.getItem('interval_connection');
 
     if (!websocket_server) {
-        websocket_server = 'localhost:80';
+        websocket_server = 'localhost';
         localStorage.setItem('websocket_server', websocket_server);
     }
     if (!interval_connection) {
